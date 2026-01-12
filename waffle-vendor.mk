@@ -7,6 +7,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/oneplus/waffle/proprietary/odm/etc/Custom_LUT_hlg.cube:$(TARGET_COPY_OUT_ODM)/etc/Custom_LUT_hlg.cube \
+    vendor/oneplus/waffle/proprietary/odm/etc/aac_richtap.config:$(TARGET_COPY_OUT_ODM)/etc/aac_richtap.config \
     vendor/oneplus/waffle/proprietary/odm/etc/acdbdata/Audio_Parameter_Version.txt:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Audio_Parameter_Version.txt \
     vendor/oneplus/waffle/proprietary/odm/etc/acdbdata/FTM/acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/FTM/acdb_cal.acdb \
     vendor/oneplus/waffle/proprietary/odm/etc/acdbdata/FTM/workspaceFileXml.qwsp:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/FTM/workspaceFileXml.qwsp \
@@ -1329,6 +1330,99 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/waffle/proprietary/odm/etc/sensor/config/waffle_qrd_ois_system.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/waffle_qrd_ois_system.json \
     vendor/oneplus/waffle/proprietary/odm/etc/sensor/sensor_config.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/sensor_config.json \
     vendor/oneplus/waffle/proprietary/odm/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_ODM)/etc/usecaseKvManager.xml \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_0.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_0.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_1.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_1.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_10.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_10.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_100.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_100.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_101.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_101.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_102.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_102.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_103.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_103.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_104.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_104.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_105.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_105.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_106.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_106.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_107.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_107.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_108.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_108.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_109.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_109.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_11.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_11.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_110.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_110.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_111.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_111.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_112.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_112.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_118.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_118.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_12.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_12.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_122.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_122.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_170.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_170.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_2.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_2.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_3.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_3.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_302.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_302.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_303.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_303.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_304.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_304.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_305.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_305.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_308.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_308.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_309.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_309.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_310.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_310.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_315.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_315.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_316.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_316.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_318.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_318.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_363.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_363.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_364.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_364.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_365.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_365.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_366.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_366.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_367.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_367.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_368.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_368.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_369.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_369.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_370.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_370.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_4.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_4.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_41.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_41.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_42.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_42.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_43.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_43.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_44.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_44.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_45.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_45.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_46.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_46.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_47.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_47.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_5.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_5.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_51.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_51.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_52.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_52.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_53.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_53.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_54.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_54.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_55.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_55.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_56.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_56.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_59.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_59.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_6.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_6.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_60.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_60.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_61.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_61.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_62.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_62.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_63.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_63.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_64.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_64.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_65.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_65.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_66.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_66.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_67.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_67.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_68.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_68.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_69.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_69.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_7.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_7.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_8.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_8.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/def/effect_9.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_9.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/soft/effect_0.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_0.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/soft/effect_1.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_1.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/soft/effect_105.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_105.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/soft/effect_106.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_106.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/soft/effect_107.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_107.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/soft/effect_109.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_109.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/soft/effect_2.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_2.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/soft/effect_3.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_3.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/soft/effect_309.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_309.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/soft/effect_310.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_310.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/soft/effect_315.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_315.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/soft/effect_316.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_316.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/soft/effect_318.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_318.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/soft/effect_363.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_363.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/soft/effect_364.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_364.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/soft/effect_4.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_4.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/soft/effect_46.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_46.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/soft/effect_47.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_47.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/soft/effect_54.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_54.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/soft/effect_6.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_6.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/soft/effect_7.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_7.bin \
+    vendor/oneplus/waffle/proprietary/odm/etc/vibrator/9999/soft/effect_8.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/soft/effect_8.bin \
     vendor/oneplus/waffle/proprietary/odm/etc/wifi/kiwi/bdwlan.b0a:$(TARGET_COPY_OUT_ODM)/etc/wifi/kiwi/bdwlan.b0a \
     vendor/oneplus/waffle/proprietary/odm/etc/wifi/kiwi/bdwlan.b0c:$(TARGET_COPY_OUT_ODM)/etc/wifi/kiwi/bdwlan.b0c \
     vendor/oneplus/waffle/proprietary/odm/etc/wifi/kiwi/bdwlan.b0e:$(TARGET_COPY_OUT_ODM)/etc/wifi/kiwi/bdwlan.b0e \
@@ -1443,6 +1537,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/waffle/proprietary/odm/vendor/firmware/uff_spi.b07:$(TARGET_COPY_OUT_ODM)/vendor/firmware/uff_spi.b07 \
     vendor/oneplus/waffle/proprietary/odm/vendor/firmware/uff_spi.b08:$(TARGET_COPY_OUT_ODM)/vendor/firmware/uff_spi.b08 \
     vendor/oneplus/waffle/proprietary/odm/vendor/firmware/uff_spi.mdt:$(TARGET_COPY_OUT_ODM)/vendor/firmware/uff_spi.mdt \
+    vendor/oneplus/waffle/proprietary/product/etc/asl/com.oplus.consumerIRApp-safetyLabel.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/asl/com.oplus.consumerIRApp-safetyLabel.xml \
+    vendor/oneplus/waffle/proprietary/product/etc/permissions/privapp-permissions-euiccgoogle.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-euiccgoogle.xml \
     vendor/oneplus/waffle/proprietary/vendor/etc/2024-01-12_platform_RSA_license_a226ad89-a187-4b14-9447-d20bfe9dac1a.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/2024-01-12_platform_RSA_license_a226ad89-a187-4b14-9447-d20bfe9dac1a.pfm \
     vendor/oneplus/waffle/proprietary/vendor/etc/clstc_config_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/clstc_config_library.xml \
     vendor/oneplus/waffle/proprietary/vendor/etc/display/DPU1010.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU1010.xml \
@@ -1799,6 +1895,7 @@ PRODUCT_PACKAGES += \
     libPanelChaplin \
     libRGBC \
     libSonyIMX471RmscLibrary \
+    libaacvibrator \
     libaidenoiser \
     libaidenoiserv2 \
     libarcsoft_triple_sat_vendor \
@@ -1917,13 +2014,13 @@ PRODUCT_PACKAGES += \
     libvideoml \
     libvmfilexfer \
     sensors.qsh \
-    vendor.display.color@1.0 \
-    vendor.display.color@1.1 \
-    vendor.display.color@1.2 \
-    vendor.display.color@1.3 \
+    vendor.display.color@1.0_vendor \
+    vendor.display.color@1.1_vendor \
+    vendor.display.color@1.2_vendor \
+    vendor.display.color@1.3_vendor \
     vendor.display.color@1.4 \
     vendor.display.color@1.5 \
-    vendor.display.postproc@1.0 \
+    vendor.display.postproc@1.0_vendor \
     vendor.oplus.hardware.camera.aon-V1-ndk_platform \
     vendor.oplus.hardware.camera.aon-service-impl \
     vendor.oplus.hardware.camera_rfi-V1-ndk_vendor \
@@ -1933,7 +2030,6 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.cwb-V1-ndk \
     vendor.oplus.hardware.cwb@1.0 \
     vendor.oplus.hardware.displaycolorfeature-V1-ndk_vendor \
-    vendor.oplus.hardware.displaypanelfeature-V1-ndk_vendor \
     vendor.pixelworks.hardware.display-V2-ndk_vendor \
     vendor.pixelworks.hardware.display@1.0_vendor \
     vendor.pixelworks.hardware.display@1.1_vendor \
@@ -2166,7 +2262,6 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.camera_rfi-V1-service-impl \
     vendor.oplus.hardware.cammidasservice-V1-ndk \
     vendor.oplus.hardware.displaycolorfeature-V1-ndk \
-    vendor.oplus.hardware.displaypanelfeature-V1-ndk_odm \
     vendor.oplus.hardware.sendextcamcmd-V1-service-impl \
     vendor.oplus.hardware.sendextcamcmd-V2-ndk \
     vendor.pixelworks.hardware.display-V2-ndk \
@@ -2180,6 +2275,8 @@ PRODUCT_PACKAGES += \
     vendor.pixelworks.hardware.feature-V1-ndk \
     vendor.pixelworks.hardware.feature@1.0 \
     vendor.pixelworks.hardware.feature@1.1 \
+    ConsumerIRApp \
+    EuiccGoogle \
     vendor.qti.camera.aon-impl.xml \
     vendor.qti.camera.offlinecamera-impl.xml \
     vendor.qti.camera.postproc-impl.xml \

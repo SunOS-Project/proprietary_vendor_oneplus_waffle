@@ -6908,6 +6908,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libaacvibrator",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libaacvibrator.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libaidenoiser",
     owner: "oneplus",
     strip: {
@@ -10195,7 +10222,7 @@ cc_prebuilt_library_shared {
                 "vendor.pixelworks.hardware.display@1.0_vendor",
                 "android.frameworks.stats-V1-ndk",
                 "libolc_vnd",
-                "vendor.oplus.hardware.displaypanelfeature-V1-ndk_vendor",
+                "vendor.oplus.hardware.displaypanelfeature-V1-ndk",
                 "libbinder",
                 "libbinder_ndk",
                 "libc++",
@@ -10790,7 +10817,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.display.color@1.0",
+    name: "vendor.display.color@1.0_vendor",
+    stem: "vendor.display.color@1.0",
     owner: "oneplus",
     strip: {
         none: true,
@@ -10818,7 +10846,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.display.color@1.1",
+    name: "vendor.display.color@1.1_vendor",
+    stem: "vendor.display.color@1.1",
     owner: "oneplus",
     strip: {
         none: true,
@@ -10829,7 +10858,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.display.color@1.1.so",
             ],
             shared_libs: [
-                "vendor.display.color@1.0",
+                "vendor.display.color@1.0_vendor",
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -10847,7 +10876,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.display.color@1.2",
+    name: "vendor.display.color@1.2_vendor",
+    stem: "vendor.display.color@1.2",
     owner: "oneplus",
     strip: {
         none: true,
@@ -10858,8 +10888,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.display.color@1.2.so",
             ],
             shared_libs: [
-                "vendor.display.color@1.0",
-                "vendor.display.color@1.1",
+                "vendor.display.color@1.0_vendor",
+                "vendor.display.color@1.1_vendor",
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -10877,7 +10907,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.display.color@1.3",
+    name: "vendor.display.color@1.3_vendor",
+    stem: "vendor.display.color@1.3",
     owner: "oneplus",
     strip: {
         none: true,
@@ -10888,9 +10919,9 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.display.color@1.3.so",
             ],
             shared_libs: [
-                "vendor.display.color@1.0",
-                "vendor.display.color@1.1",
-                "vendor.display.color@1.2",
+                "vendor.display.color@1.0_vendor",
+                "vendor.display.color@1.1_vendor",
+                "vendor.display.color@1.2_vendor",
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -10919,10 +10950,10 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.display.color@1.4.so",
             ],
             shared_libs: [
-                "vendor.display.color@1.0",
-                "vendor.display.color@1.1",
-                "vendor.display.color@1.2",
-                "vendor.display.color@1.3",
+                "vendor.display.color@1.0_vendor",
+                "vendor.display.color@1.1_vendor",
+                "vendor.display.color@1.2_vendor",
+                "vendor.display.color@1.3_vendor",
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -10951,10 +10982,10 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.display.color@1.5.so",
             ],
             shared_libs: [
-                "vendor.display.color@1.0",
-                "vendor.display.color@1.1",
-                "vendor.display.color@1.2",
-                "vendor.display.color@1.3",
+                "vendor.display.color@1.0_vendor",
+                "vendor.display.color@1.1_vendor",
+                "vendor.display.color@1.2_vendor",
+                "vendor.display.color@1.3_vendor",
                 "vendor.display.color@1.4",
                 "libhidlbase",
                 "liblog",
@@ -10973,7 +11004,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.display.postproc@1.0",
+    name: "vendor.display.postproc@1.0_vendor",
+    stem: "vendor.display.postproc@1.0",
     owner: "oneplus",
     strip: {
         none: true,
@@ -11246,32 +11278,6 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/vendor.oplus.hardware.displaycolorfeature-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.oplus.hardware.displaypanelfeature-V1-ndk_vendor",
-    stem: "vendor.oplus.hardware.displaypanelfeature-V1-ndk",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.oplus.hardware.displaypanelfeature-V1-ndk.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
@@ -12265,7 +12271,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "android.hardware.graphics.mapper@4.0",
-                "android.hardware.graphics.common-V6-ndk",
+                "android.hardware.graphics.common-V5-ndk",
                 "libgralloctypes",
                 "libqdMetaData",
                 "vendor.qti.hardware.display.mapper@4.0",
@@ -15608,7 +15614,7 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "libhidlbase",
                 "libutils",
-                "vendor.oplus.hardware.displaypanelfeature-V1-ndk_odm",
+                "vendor.oplus.hardware.displaypanelfeature-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -17750,32 +17756,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.oplus.hardware.displaypanelfeature-V1-ndk_odm",
-    stem: "vendor.oplus.hardware.displaypanelfeature-V1-ndk",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/vendor.oplus.hardware.displaypanelfeature-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.oplus.hardware.sendextcamcmd-V1-service-impl",
     owner: "oneplus",
     strip: {
@@ -18165,6 +18145,31 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     device_specific: true,
+}
+
+android_app_import {
+    name: "ConsumerIRApp",
+    owner: "oneplus",
+    apk: "proprietary/product/app/ConsumerIRApp/ConsumerIRApp.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    product_specific: true,
+}
+
+android_app_import {
+    name: "EuiccGoogle",
+    owner: "oneplus",
+    apk: "proprietary/product/priv-app/EuiccGoogle/EuiccGoogle.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
 }
 
 prebuilt_etc_xml {
@@ -18568,7 +18573,7 @@ cc_prebuilt_binary {
                 "libutils",
                 "libcutils",
                 "libhardware",
-                "vendor.oplus.hardware.displaypanelfeature-V1-ndk_odm",
+                "vendor.oplus.hardware.displaypanelfeature-V1-ndk",
                 "libjsoncpp",
                 "libc++",
                 "libc",
